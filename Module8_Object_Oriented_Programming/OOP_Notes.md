@@ -55,3 +55,32 @@
 - Multiple Inheritance
   - ParentA -> ChildA
   - ParentB -> ChildA
+
+---
+
+**Polymorphism**
+
+Many Forms
+
+---
+
+**Encapsulation**
+
+**Data Members**
+
+Data members are variables and methods inside a class
+
+**Access Modifiers**
+1) **Public** - Data members are accessible from anywhere
+2) **Protected** - Data members are accessible only by child class
+3) **Private** - Data members are accessible only from same class
+
+**Note:** Underscore(_) is used to determine access modifier
+
+---
+
+**Abstraction**
+- Abstract classes are treated as blueprint
+- Methods defined in abstract class are abstract methods
+
+---
