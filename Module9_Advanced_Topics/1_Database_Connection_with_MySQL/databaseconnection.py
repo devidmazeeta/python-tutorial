@@ -4,7 +4,7 @@ mydb = mysql.connector.connect(
     host="localhost",
     user="root",  # Default XAMPP MySQL username
     password="",  # Default XAMPP MySQL password
-    database="your_database_name"  # Replace with your database name
+    database="ednue"  # Replace with your database name
 )
 
 mycursor = mydb.cursor()
