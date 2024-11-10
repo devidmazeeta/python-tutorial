@@ -1,57 +1,8 @@
-### Project Overview:
-Develop a Personal Finance Manager
-application.
-
-### Key Features:
-- **Add/Edit/Delete Transactions**
-- **Categorize Transactions** (e.g., Income, Expenses)
-- **Summary Report** (display total income/expenses)
-- **Multithreaded Operations** (for background data processing)
-- **Input Validation** (using decorators)
-- **Error Handling and Data Validation**
-
----
-
-### 1. Setting up MySQL Database
-
-You'll need to create a MySQL database and table to store your transactions.
-
-```sql
--- Create the database
-CREATE DATABASE financemanager;
-
--- Switch to the new database
-USE financemanager;
-
--- Create a table to store transactions
-CREATE TABLE transactions (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    amount DECIMAL(10, 2),
-    category VARCHAR(255),
-    description TEXT,
-    date DATE
-);
-```
-
-### 2. Install Required Python Libraries
-
-To implement this, you'll need some Python libraries. Install them using pip:
-
-```bash
-pip install mysql-connector-python
-pip install threading
-pip install time
-```
-
-### 3. Main Python Code
-
-#### File: `financemanager.py`
-
-```python
 import mysql.connector
 import threading
 import time
 from datetime import datetime
+
 
 # Database Connection
 def create_connection():
@@ -59,8 +10,9 @@ def create_connection():
         host="localhost",
         user="root",
         password="yourpassword",
-        database="financemanager"
+        database="finance_manager"
     )
+
 
 # Decorator for validating user input
 def validate_input(func):
@@ -72,7 +24,9 @@ def validate_input(func):
             print("Invalid category. Please choose 'Income' or 'Expense'.")
             return
         return func(*args, **kwargs)
+
     return wrapper
+
 
 # Transaction Manager Class
 class TransactionManager:
@@ -110,10 +64,11 @@ class TransactionManager:
         print("\n--- Summary Report ---")
         for category, total in result:
             print(f"{category}: {total}")
-    
+
     def close_connection(self):
         self.cursor.close()
         self.connection.close()
+
 
 # Background Processing using Multithreading
 def background_task():
@@ -121,10 +76,11 @@ def background_task():
         print("Running background data processing...")
         time.sleep(10)  # Simulate background task that runs every 10 seconds
 
+
 # Main Application
 def main():
     manager = TransactionManager()
-    
+
     # Starting background processing in a separate thread
     threading.Thread(target=background_task, daemon=True).start()
 
@@ -134,7 +90,7 @@ def main():
         print("3. Delete Transaction")
         print("4. View Summary Report")
         print("5. Exit")
-        
+
         choice = input("Enter your choice: ")
 
         if choice == '1':
@@ -160,38 +116,6 @@ def main():
         else:
             print("Invalid choice, please try again.")
 
+
 if __name__ == "__main__":
     main()
-```
-
-### Key Components of the Code
-
-1. **Database Connection (`create_connection`)**:
-   - This function establishes the connection to the MySQL database.
-
-2. **TransactionManager Class**:
-   - This class handles all operations related to transactions: adding, editing, deleting, and retrieving summary reports.
-   - The `add_transaction` method is decorated with `@validate_input` to ensure the user enters valid data.
-
-3. **Multithreading for Background Tasks**:
-   - The `background_task` function runs in the background, simulating a process that runs periodically (e.g., syncing data).
-   - This is run in a separate thread using Python's `threading` module.
-
-4. **User Interface**:
-   - A simple text-based UI is provided in the `main` function for interacting with the application.
-
-### 4. Running the Project
-
-- **Database Setup**: Ensure that the MySQL database and table are correctly set up.
-- **Python Code Execution**: Run the Python script using the command:
-
-```bash
-python financemanager.py
-```
-
-The application will display a menu with options to add, edit, or delete transactions, as well as view the summary report.
-
-### 5. Future Improvements
-- **Graphical User Interface (GUI)**: Implement a GUI using libraries like Tkinter or PyQt5 for a better user experience.
-- **Authentication**: Add a login system for users to securely manage their finances.
-- **Advanced Features**: Implement advanced features like recurring payments, budgets, and expense categories.
