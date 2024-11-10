@@ -15,13 +15,13 @@ def timeit_decorator(func):
 @timeit_decorator
 def slow_function():
     print("Starting slow function...")
-    time.sleep(2)  # Simulate a slow function (sleep for 2 seconds)
+    time.sleep(10)  # Simulate a slow function (sleep for 2 seconds)
     print("Slow function finished!")
 
 @timeit_decorator
 def fast_function():
     print("Starting fast function...")
-    time.sleep(1)  # Simulate a fast function (sleep for 1 second)
+    time.sleep(5)  # Simulate a fast function (sleep for 1 second)
     print("Fast function finished!")
 
 # Calling the decorated functions

@@ -7,15 +7,13 @@
 # Parsing XML using ElementTree:
 import xml.etree.ElementTree as ET
 
-# Parse XML data from a string
-xml_data = """
-<bookstore>
-  <book category="fiction">
-    <title>The Lord of the Rings</title>
-    <author>J.R.R. Tolkien</author>
-  </book>
-</bookstore>
-"""
+# Converting XML to JSON using xmltodict:
+import xmltodict
+import json
+
+# Read & parse XML data from a file
+with open("input_data.xml", "r") as file:  # file object is iterable
+    xml_data = file.read()
 
 root = ET.fromstring(xml_data)
 
@@ -25,20 +23,7 @@ print(root[0].tag)
 print(root[0].attrib)
 print(root[0][0].text)
 
-# Converting XML to JSON using xmltodict:
-import xmltodict
-import json
-
 # Parse XML data
-xml_data = """
-<bookstore>
-  <book category="fiction">
-    <title>The Lord of the Rings</title>
-    <author>J.R.R. Tolkien</author>
-  </book>
-</bookstore>
-"""
-
 data = xmltodict.parse(xml_data)
 
 # Convert to JSON

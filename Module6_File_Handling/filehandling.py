@@ -39,7 +39,7 @@ def readoperations():
         for line in file:
             print(line, end="")
 
-    # To store each lines in a list
+    # To read file as a list
     with open("sample1.txt", "r") as file: # file object is iterable
         lines = file.readlines()
         print(lines)
