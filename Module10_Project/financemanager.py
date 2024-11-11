@@ -9,18 +9,18 @@ def create_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="yourpassword",
-        database="finance_manager"
+        password="",
+        database="financemanager"
     )
 
 
 # Decorator for validating user input
 def validate_input(func):
     def wrapper(*args, **kwargs):
-        if not args or not isinstance(args[0], (int, float)):
+        if not args or not isinstance(args[1], (int, float)):
             print("Invalid amount. Please enter a number.")
             return
-        if args[1] not in ['Income', 'Expense']:
+        if args[2] not in ['Income', 'Expense']:
             print("Invalid category. Please choose 'Income' or 'Expense'.")
             return
         return func(*args, **kwargs)
