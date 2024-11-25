@@ -1,10 +1,11 @@
 # Arithmetic Operators (+, -, *, /, %, **, //)
-from numpy.random.mtrand import operator
-
 num1 = 2
 num2 = 4
 print(num1 * num2) # 8
 print(num1 ** num2) # 16
+
+result = 10 // 3
+print(result) # 3
 
 # Comparison Operators (==, !=, >, <, >=, <=)
 num3 = 10
@@ -14,6 +15,20 @@ if num3 < num4:
     print("Condition satisfied")
 
 # Logical Operators (and, or, not)
+# AND
+# 0   0   =>  0
+# 0   1   =>  0
+# 1   0   =>  0
+# 1   1   =>  1
+# OR
+# 0   0   =>  0
+# 0   1   =>  1
+# 1   0   =>  1
+# 1   1   =>  1
+# NOT
+# 0   => 1
+# 1   => 0
+
 flag1 = True
 flag2 = True
 flag3 = False

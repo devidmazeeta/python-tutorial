@@ -9,13 +9,18 @@ print (companyName + " " + suffix)
 # %f for float
 name = "Arun" # String
 age = 25 # Integer
-score = 99.126456 # Integer
+score = 99.126456 # Float
 # print (name+age) # TypeError: can only concatenate str (not "int") to str
 print("%s age is %d. He has scored %.2f in HSC."%(name, age, score))
 
 # Method 3 - .format() method
 print ("{} age is {}. He has scored {} in HSC.".format(name, age, score))
 print ("{0} age is {2}. He has scored {1} in HSC.".format(name, age, score))
+
+{
+    "name": "devid",
+    "age": "100"
+}
 
 # Method 4 - f'string
 personName = "Alex"

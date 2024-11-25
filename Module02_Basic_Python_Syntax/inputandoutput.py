@@ -7,6 +7,7 @@ print(f"My name is {name} and my roll number is {rollNo}")
 
 # To get multiple inputs in single input command
 numbers = input("Enter multiple numbers using comma separator: ") # "1,2,3,4,5,6"
+print(type(numbers))
 commaSeparatedNumbers = numbers.split(",")
 print(commaSeparatedNumbers)
 

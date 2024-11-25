@@ -18,11 +18,9 @@ if flag:
 stringCount = "50" # String
 print(type(stringCount))
 print(stringCount) # 50 - String
-intCount = int(stringCount) # Orginal variable value will not be changed
-print(type(stringCount))
-print(stringCount) # 50 - String
+intCount = int(stringCount) # Original variable value will not be changed
 print(type(intCount))
-print(intCount) #50 - Integer
+print(intCount) # 50 - Integer
 
 # Integer to String conversion
 intNum = 1234
