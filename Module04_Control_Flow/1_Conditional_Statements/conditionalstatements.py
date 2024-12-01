@@ -1,3 +1,8 @@
+# Control Flow:
+#     - Conditional Statements
+#     - Looping
+#     - Comprehensions
+
 # Syntax:
 # if condition:
 #     code lines

@@ -1,3 +1,4 @@
+# fruit = "Apple"
 fruit = "Kiwi"
 
 if len(fruit) > 4:
