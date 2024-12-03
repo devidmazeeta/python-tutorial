@@ -1,5 +1,5 @@
 # break => Terminates loop
-# continue => jumps to next loop
+# continue => Jumps to next loop
 
 num = 100
 while num > 0:

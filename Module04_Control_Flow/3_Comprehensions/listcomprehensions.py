@@ -15,10 +15,6 @@ values = [
     "Xyz"
 ]
 
-# List Comprehension Syntax
-# listVar = [ expression for itemVar in iterable if condition ]
-# listVar = [ expression for itemVar in iterable ]
-
 # To filter integer type values from the list
 # Normal Method
 filteredValues = []
@@ -27,6 +23,10 @@ for value in values:
         filteredValues.append(value)
 print("******* Normal Method *********")
 print(filteredValues)
+
+# List Comprehension Syntax
+# listVar = [ expression for itemVar in iterable if condition ]
+# listVar = [ expression for itemVar in iterable ]
 
 # Comprehension Method
 filteredValues = [ value for value in values if type(value) == int ]
@@ -43,5 +43,11 @@ fruits = {
     "kiwi": 25,
 }
 
+# lowStockFruits = [ fruit[0] for fruit in fruits.items() if fruit[1] < 10 ]
+# ["apple", "pineapple", "watermelon"]
+
+# lowStockFruits = [ (fruit[0], fruit[1]) for fruit in fruits.items() if fruit[1] < 10 ]
+# [("apple", 7), ("pineapple", 6), ("watermelon", 3)]
+
 lowStockFruits = [ (fruitName, stockCount) for fruitName, stockCount in fruits.items() if stockCount < 10]
-print(lowStockFruits)
+print(lowStockFruits) # [ ("apple", 7), ("pineapple", 6), ("watermelon", 3) ]

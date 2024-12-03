@@ -25,6 +25,21 @@ fruits = {
     "orange": 30,
 }
 
+for fruit in fruits:
+    print(fruit)
+
+for fruit in fruits.items():
+    print(fruit)
+    print("key: " + fruit[0])
+    print("value :", fruit[1])
+
+# fruits.values() # [10, 20, 30]
+for fruit in fruits.values():
+    print(fruit)
+
+keyslist = fruits.keys()
+print(keyslist)
+
 # 1 fruit = ("apple", 10)
 # 2 ("grapes", 20)
 # 3 ("orange", 30)
