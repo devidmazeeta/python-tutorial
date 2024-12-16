@@ -37,3 +37,6 @@
 - r+ => read & write (read a file & append a content)
 - w+ => write & read (truncate/create a file & write a content)
 - a+ => read & append
+- rb => read binary (eg. Image files)
+- wb => write binary (eg. Image files)
+- ab => append binary (eg. Image files)

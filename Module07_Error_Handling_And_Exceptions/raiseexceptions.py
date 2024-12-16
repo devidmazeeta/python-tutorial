@@ -1,5 +1,7 @@
 # Syntax:
-# raise ExceptionName(message)
+# raise ExceptionClassName("some message")
+
+# raise ValueError("This is custom error message for ValueError!") # Program by itself will terminate
 
 try:
     raise ValueError("This is custom error message for ValueError!")
@@ -9,4 +11,4 @@ except NameError:
     raise
 except ValueError:
     print("Caught an exception - ValueError!")
-    raise
+    raise # Program terminates when I raise exception

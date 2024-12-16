@@ -1,10 +1,10 @@
 **Error Handling & Exception**
 
 **Block in Error Handling:**
-- try
-- except
-- else (optional)
-- finally (optional)
+- try (Mandatory)
+- except (Mandatory)
+- else (Optional)
+- finally (Optional)
 
 ---
 
@@ -23,6 +23,6 @@
 ---
 
 **Traceback:**
-- file absolute path & error line number
-- error'ed line
-- exception: error message
+- absolute path of the file & error line number
+- prints error'ed line & it denotes the error'ed area (^)
+- exception class: error message

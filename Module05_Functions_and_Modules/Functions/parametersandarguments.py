@@ -18,6 +18,11 @@ print(result2)
 
 # Method 3 => Arbitrary Arguments (*args)
 def addition(*nums): # nums = (10, 20, 30, 40)
+    value = ""
+    for num in nums:
+        value += str(num)
+    print(value) #10203040
+
     return sum(nums) # using python built in method - sum()
 
 print("****** Arbitrary Arguments (*args) ******")
@@ -33,14 +38,9 @@ def subtract(*nums2): # nums = (10, 5)
     value1 = nums2[0]
     return value1 - value2
 
-subtract(10,5)
+print(subtract(10,5))
 
 # Method 4 => Keyword Arbitrary Arguments (**kwargs)
-def addition(num2, num1): # Position of arguments is changed
-    sum = num1 + num2
-    return sum
-
-print("****** Keyword Arbitrary Arguments (**kwargs) ******")
 def laptopCount(**values):
     # values = {
     #     'name1': 'Dell',
@@ -54,9 +54,10 @@ def laptopCount(**values):
     # }
     print(values)
     print(values['name1'])
-    # print(values.['name5'])
+    # print(values['name5']) # KeyError: 'name5'
     print(values.get('name5'))
 
+print("****** Keyword Arbitrary Arguments (**kwargs) ******")
 laptopCount(name1="Dell", count1=10,
             name2="Apple", count2=20,
             name3="Lenovo", count3=30,
@@ -69,4 +70,5 @@ def defaultValues(x, y="Ednue"):
     print (y)
 
 defaultValues(x = 10)
-defaultValues(x = 10, y="TCS")
+defaultValues(x = 20, y="TCS")
+defaultValues(20, "TCS")

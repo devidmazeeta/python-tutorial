@@ -1,3 +1,12 @@
+# OOP:
+#     - Class - Its a template/blueprint of an object
+#     - Objects - Instance of class
+#
+#     - Encapsulation
+#     - Inheritance
+#     - Abstraction
+#     - Polymorphism
+
 # Normal Attribute
 bankname = "HDFC Bank"
 
@@ -9,7 +18,7 @@ def welcome():
 # class <classname>
 class user:
     # Class Variable (Optional)
-    branch = "Eagattur"
+    branch = "Egattur"
 
     # def __init__(self):
     #     pass
@@ -22,4 +31,4 @@ class user:
 
     # class definition
     def printaccdetails(self, accbal):
-        print(f"Account no of {self.accname} is {self.accno} and acoount balance is {accbal}")
+        print(f"Account no of {self.accname} is {self.accno} and account balance is {accbal}")

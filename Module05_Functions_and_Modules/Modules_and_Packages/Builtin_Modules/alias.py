@@ -3,6 +3,11 @@
 
 from datetime import datetime as dt
 import math as ma
+from json import encoder as en
+
+text = '10"'
+jsonText = en.py_encode_basestring(text)
+print(jsonText)
 
 print("Today : ", end="")
 print(dt.today())
