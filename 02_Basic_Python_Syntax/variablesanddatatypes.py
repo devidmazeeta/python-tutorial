@@ -5,10 +5,10 @@ score = 90.56 # float
 text = "Apple" # String
 
 # Basic Data Types (int, float, str, bool)
-flag = "True" # String
-flag = True # Boolean
+flag1 = "True" # String
+flag2 = True # Boolean
 
-if flag:
+if flag2:
     print("Condition satisfied")
 
 # Type Conversion and Casting

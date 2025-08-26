@@ -1,4 +1,4 @@
-def Addition():
+def addition():
     """
     This definition performs addition operation
     for 2 numbers
@@ -7,8 +7,8 @@ def Addition():
     """
     number1 = 10
     number2 = 20
-    resultNum = number1 + number2
-    print(resultNum)
+    resultnum = number1 + number2
+    print(resultnum, "is the result of addition")
 
 # print("Single Line Comment")
 
@@ -18,4 +18,12 @@ def Addition():
 # print(text1 + " " + text2)
 
 # Explaining comment in definition
-Addition() # Performs addition
+addition() # Performs addition
+
+'''This is also a
+multiline
+comment'''
+
+"""This is also a
+multiline
+comment"""
