@@ -1,4 +1,4 @@
-# Python Basics - Beginner Guide
+# Chapter 1: Introduction to Python
 
 ## 1. Overview of Python
 
@@ -105,3 +105,7 @@
    * **In IDE:** Click **Run**.
 
 ---
+
+## Next Steps
+
+Move to **Chapter 2: Basic Python Syntax** to learn about Python’s building blocks like variables, data types, and operators.
