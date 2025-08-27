@@ -1,17 +1,11 @@
 # Numeric Types
-a = 10         # int
-b = 20.5       # float
-c = 3 + 4j     # complex
+integer_sample = 10         # integer
+float_sample = 20.5         # float
+complex_sample = 3 + 4j     # complex
 
 # Operations
-print("Integer:", a)
-print("Float:", b)
-print("Complex number:", c)
-print("Real part of complex number:", c.real)
-print("Imaginary part of complex number:", c.imag)
-
-# print("abc")
-# print("def")
-# print("ghi", end="====")
-# print("jkl")
-# print(a, b, c, sep="-")
+print("Integer:", integer_sample)  # 10
+print("Float:", float_sample)      # 20.5
+print("Complex number:", complex_sample)  # 3 + 4j
+print("Real part of complex number:", complex_sample.real)  # 3.0
+print("Imaginary part of complex number:", complex_sample.imag)  # 4.0

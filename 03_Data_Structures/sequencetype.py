@@ -1,35 +1,37 @@
 # String
-s = "Hello, World!"
-print("String:", s)
-print("First character of string:", s[0])
+# String
+string_example = "Hello, World!"
+print("String:", string_example)
+print("First character of string:", string_example[0])
 # String methods
-print(s.replace("World", "Python"))
-print(s)
+print(string_example.replace("World", "Python"))
+print(string_example)
 
 # List
-lst = [1, 2, 3, "Python", 4.5]
-print(lst[3]) # Python
-print(lst[3][2]) # t
+list_example = [1, 2, 3, "Python", 4.5]
+print(list_example[3])  # Python
+print(list_example[3][2])  # t
 # Positive indexing
-print(lst[2]) # 3
-print(lst[3]) # Python
+print(list_example[2])  # 3
+print(list_example[3])  # Python
 # Negative indexing
-print(lst[-3]) # 3
-print(lst[-2]) # Python
-print("List:", lst)
+print(list_example[-3])  # 3
+print(list_example[-2])  # Python
+print("List:", list_example)
 # List Methods
-print(len(lst))
-lst.append("Java")  # Adding an element at the end
-print("Updated List:", lst)
-print(len(lst))
-lst.insert(2, "C++")
-print("Modified List:", lst)
-print(len(lst))
-lst[0] = 9;
-print("Modified List:", lst)
-print(len(lst))
+print(len(list_example))
+list_example.append("Java")  # Adding an element at the end
+print("Updated List:", list_example)
+print(len(list_example))
+list_example.insert(2, "C++")
+print("Modified List:", list_example)
+print(len(list_example))
+list_example[0] = 9
+print("Modified List:", list_example)
+print(len(list_example))
 
 # Tuple
-tpl = (10, 20, "Tuple", 30.5)
-print("Tuple:", tpl)
+tuple_example = (10, 20, "Tuple", 30.5)
+print("Tuple:", tuple_example)
+# tuple_example[0] = 99  # Error: Tuples are immutable
 # tpl[0] = 99  # Error: Tuples are immutable

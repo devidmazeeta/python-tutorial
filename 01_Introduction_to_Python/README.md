@@ -108,4 +108,4 @@
 
 ## Next Steps
 
-Move to **Chapter 2: Basic Python Syntax** to learn about Python’s building blocks like variables, data types, and operators.
+Move to **[Chapter 2: Control Flow](../02_Basic_Python_Syntax/README.md)** to learn about Python’s building blocks like variables, data types, and operators.

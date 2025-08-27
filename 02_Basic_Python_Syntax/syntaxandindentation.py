@@ -1,9 +1,8 @@
-# No Semicolon
-# No variable type definition
+# No semicolons needed
+# No variable type definition required
 # No curly braces for block definition
-# Use semicolon and tab for declaring and defining a block
-# Tabs can be any number of spaces to define a blocker.
-# But, number of spaces should be maintained same across program.
+# Use indentation (spaces or tabs) for declaring and defining a block
+# Indentation must be consistent throughout the program
 
 number = 10
 text = "Ednue"

@@ -16,6 +16,19 @@ By the end of this chapter, you will be able to:
 
 ---
 
+## 🚩 Learning Order of Programs
+
+1. [Syntax and Indentation](syntaxandindentation.py)
+2. [Comment Lines](commentlines.py)
+3. [Print Statement](printstatement.py)
+4. [String Formatting](stringformatting.py)
+5. [Variables and Data Types](variablesanddatatypes.py)
+6. [Input and Output](inputandoutput.py)
+7. [Basic Operators](basicoperators.py)
+8. [Logical Operators](logicaloperators.py)
+
+---
+
 ## 1. Indentation and Code Blocks
 
 Unlike many languages that use braces `{}` or keywords to define blocks, Python uses **indentation**. Proper indentation is critical and not optional.
@@ -230,4 +243,4 @@ print(f"Hello {name}, you are {age} years old.")
 
 ## Next Steps
 
-Move to **Chapter 3: Control Flow** to learn how to make decisions and branch logic in your programs.
+Move to **[Chapter 3: Data Structures](../03_Data_Structures/README.md)** to learn how to store and manage collections of data efficiently.

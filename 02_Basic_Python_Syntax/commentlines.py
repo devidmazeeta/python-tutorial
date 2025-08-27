@@ -1,29 +1,37 @@
 def addition():
     """
-    This definition performs addition operation
-    for 2 numbers
+    This function performs an addition operation
+    for two numbers.
 
-    :return: None
+    :param number1: First number to add
+    :param number2: Second number to add
+    :return: The result of addition
     """
     number1 = 10
     number2 = 20
-    resultnum = number1 + number2
-    print(resultnum, "is the result of addition")
+    result = number1 + number2
+    print(f"{result} is the result of addition")
+    return result
 
+# Single line comment example
 # print("Single Line Comment")
 
-# Multiline Comment
+# Multiline comment example
 # text1 = "Ednue"
 # text2 = "Technologies"
 # print(text1 + " " + text2)
 
-# Explaining comment in definition
-addition() # Performs addition
+# Function calls with example values
+addition()         # Performs addition
 
-'''This is also a
+'''
+This is also a
 multiline
-comment'''
+comment
+'''
 
-"""This is also a
+"""
+This is also a
 multiline
-comment"""
+comment
+"""
