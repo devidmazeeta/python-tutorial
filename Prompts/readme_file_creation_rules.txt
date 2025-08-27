@@ -1,4 +1,4 @@
-# README Creation Rules for python-tutorial
+# README.md File Creation Rules for python-tutorial
 
 ## 1. Read the Repository Structure First
 - Start by scanning the repository:
