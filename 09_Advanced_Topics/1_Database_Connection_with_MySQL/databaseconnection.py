@@ -1,10 +1,10 @@
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="localhost",
+  host="localhost",  # XAMPP runs MySQL on localhost
   user="root",  # Default XAMPP MySQL username
   password="",  # Default XAMPP MySQL password
-  database="ednue"
+  database="training"  # Replace with your database name
 )
 
 mycursor1 = mydb.cursor()

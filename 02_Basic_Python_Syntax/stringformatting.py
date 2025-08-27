@@ -1,6 +1,6 @@
 # Method 1 - Concatenation using + operator
-company_name = "Ednue Technologies"
-company_suffix = "Pvt Ltd"
+company_name = "Google"
+company_suffix = "Inc."
 print(company_name + " " + company_suffix)
 
 # Method 2 - '%' or C-style String Formatting

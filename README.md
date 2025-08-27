@@ -143,7 +143,7 @@ By the end of this course, learners will be able to:
     - [Assessment_2.docx](Assessments/Coding_Exercises/Assessment_2.docx)
     - [Assessment_3.docx](Assessments/Coding_Exercises/Assessment_3.docx)
 - [GIT_Notes.md](GIT_Notes.md)
-- [Python_Programming_Syllabus.pdf](Python_Programming_Syllabus.pdf)
+- [Syllabus.md](Syllabus.md)
 
 ---
 

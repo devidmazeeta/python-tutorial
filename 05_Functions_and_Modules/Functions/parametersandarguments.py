@@ -65,10 +65,10 @@ laptopCount(name1="Dell", count1=10,
 )
 
 # Default Values
-def defaultValues(x, y="Ednue"):
+def defaultValues(x, y="Google"):
     print (x)
     print (y)
 
 defaultValues(x = 10)
-defaultValues(x = 20, y="TCS")
-defaultValues(20, "TCS")
+defaultValues(x = 20, y="Tesla")
+defaultValues(20, "Tesla")

@@ -5,7 +5,7 @@
 # Indentation must be consistent throughout the program
 
 number = 10
-text = "Ednue"
+text = "Google"
 
 if number == 10:
     print("Inside IF block")

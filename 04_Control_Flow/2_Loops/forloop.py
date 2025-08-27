@@ -14,7 +14,7 @@ for name in names:
 print("\n") # Came out of Loop
 
 # Looping a String
-companyName = "Ednue"
+companyName = "Google"
 for letter in companyName:
     print(letter)
 

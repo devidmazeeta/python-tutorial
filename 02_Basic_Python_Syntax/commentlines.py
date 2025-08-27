@@ -17,8 +17,8 @@ def addition():
 # print("Single Line Comment")
 
 # Multiline comment example
-# text1 = "Ednue"
-# text2 = "Technologies"
+# text1 = "Google"
+# text2 = "Inc"
 # print(text1 + " " + text2)
 
 # Function calls with example values

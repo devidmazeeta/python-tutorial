@@ -9,7 +9,7 @@
 
 name = input("Enter the name: ")
 
-if len(name) == 5: # Ednue => True, TCS => False
+if len(name) == 6: # Google => True, Tesla => False
     print("Length of the given name is 5")
 
 # Not
