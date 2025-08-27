@@ -1,0 +1,20 @@
+<prompt>
+  <title>Code Refactor and Enhancement</title>
+  <description>
+    Rewrite and enhance the given code according to the following guidelines.
+  </description>
+  <steps>
+    <step>
+      <instruction>Refactor the code if necessary for better readability, efficiency, or style.</instruction>
+    </step>
+    <step>
+      <instruction>Expand the program if needed to improve its functionality or completeness.</instruction>
+    </step>
+    <step>
+      <instruction>Add clear and concise comment lines wherever necessary to explain the code.</instruction>
+    </step>
+    <step>
+      <instruction>Ensure there is a newline at the end of the program.</instruction>
+    </step>
+  </steps>
+</prompt>
