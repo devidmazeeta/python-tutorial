@@ -1,11 +1,12 @@
 # String
-# String
 string_example = "Hello, World!"
-print("String:", string_example)
-print("First character of string:", string_example[0])
+print("String:", string_example) # String: Hello, World!
+print("First character of string:", string_example[0]) # First character of string: H
 # String methods
-print(string_example.replace("World", "Python"))
-print(string_example)
+print(string_example.replace("World", "Python")) # Hello, Python
+print(string_example) # Hello, World!
+string_example = string_example.replace("World", "Python")
+print(string_example) # Hello, Python!
 
 # List
 list_example = [1, 2, 3, "Python", 4.5]

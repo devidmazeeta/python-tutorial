@@ -1,6 +1,6 @@
 # Boolean
-is_true_flag = True
-is_false_flag = False
+is_true_flag = True # 1
+is_false_flag = False # 0
 print("True Flag:", is_true_flag, ", False Flag:", is_false_flag)  # True Flag: True , False Flag: False
 
 # Boolean with comparison operators
