@@ -6,7 +6,7 @@ print(f"My name is {name} and my roll number is {roll_no}")
 
 # To get multiple inputs in a single input command
 numbers_input = input("Enter multiple numbers using comma separator: ")  # e.g. "1,2,3,4,5,6"
-comma_separated_numbers = numbers_input.split(",")
+comma_separated_numbers = numbers_input.split(",") # [ 1, 2, 3, 4, 5, 6 ]
 numbers = [int(num.strip()) for num in comma_separated_numbers if num.strip().isdigit()]
 print(f"Numbers entered: {numbers}")
 print(f"Sum of numbers: {sum(numbers)}")
