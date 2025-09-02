@@ -1,12 +1,12 @@
 # String
 string_example = "Hello, World!"
-print("String:", string_example) # String: Hello, World!
-print("First character of string:", string_example[0]) # First character of string: H
+print("String:", string_example)  # String: Hello, World!
+print("First character of string:", string_example[0])  # First character of string: H
 # String methods
-print(string_example.replace("World", "Python")) # Hello, Python
-print(string_example) # Hello, World!
+print(string_example.replace("World", "Python"))  # Hello, Python
+print(string_example)  # Hello, World!
 string_example = string_example.replace("World", "Python")
-print(string_example) # Hello, Python!
+print(string_example)  # Hello, Python!
 
 # List
 list_example = [1, 2, 3, "Python", 4.5]
@@ -31,8 +31,18 @@ print(len(list_example))
 list_example[0] = 9
 print("Modified List:", list_example)
 print(len(list_example))
+# Creating an empty list
+list_example1 = []
+print("Empty List:", list_example1)  # Empty List: []
+list_example2 = list()
+print("Empty List:", list_example2)  # Empty List: []
 
 # Tuple
 tuple_example = (10, 20, "Tuple", 30.5)
 print("Tuple:", tuple_example)
 tuple_example[0] = 99  # Error: Tuples are immutable
+# Creating an empty tuple
+tuple_example1 = ()
+print("Empty Tuple 1:", tuple_example1)  # Empty Tuple 1: ()
+tuple_example2 = tuple()
+print("Empty Tuple 2:", tuple_example2)  # Empty Tuple 2: ()
