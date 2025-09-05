@@ -11,3 +11,14 @@ while num > 0:
     print(num)
 else:
     print("while loop ended")
+
+for n in range(100):
+    for i in range(n):
+        if n == 5:
+            break
+        print(i)
+
+    if n == 5:
+        break
+else:
+    print("For loop ended")

@@ -1,5 +1,6 @@
 # Syntax
 # range(start, end, step) # start and step are optional
+
 print("******** Range with a Num **********")
 
 for num in range(7): # range(7) => [0,1,2,3,4,5,6]

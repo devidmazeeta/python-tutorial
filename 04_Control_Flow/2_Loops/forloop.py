@@ -37,29 +37,28 @@ for fruit in fruits.items():
 for fruit in fruits.values():
     print(fruit)
 
-keyslist = fruits.keys()
-print(keyslist)
-
 # 1 fruit = ("apple", 10)
 # 2 ("grapes", 20)
 # 3 ("orange", 30)
 
 for fruit in fruits:
     print(fruit)
+else:
+    print("For loop ended")
 
-fruit = ("apple", 10)
 # Using items dictionary method (Method 1)
-for fruit in fruits.items():
+for fruit in fruits.items(): # dict_items(("apple", 10), ("grapes", 20), ("orange", 30))
     print("Key is " + fruit[0])
     print("Value is " + str(fruit[1]))
 
 # Using items dictionary method (Method 2)
-for (key, value) in fruits.items():
+for (key, value) in fruits.items(): # (key, value) = ("apple", 10)
     print(f"Count of {key} is {value}")
 
 # Using dictionary method - keys() & values
-fruitKeys = fruits.keys() # ["apple", "grapes", "orange"]
-print(fruitKeys)
+fruitKeys = fruits.keys() # dict_keys(["apple", "grapes", "orange"])
+print(fruitKeys) # dict_keys(["apple", "grapes", "orange"])
+print(list(fruitKeys)) # ["apple", "grapes", "orange"]
 
 total = 0
 for count in fruits.values():
