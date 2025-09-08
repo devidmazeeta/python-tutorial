@@ -1,20 +1,14 @@
-# Control Flow:
-#     - Conditional Statements
-#     - Looping
-#     - Comprehensions
+"""
+Conditional Statements in Python
+--------------------------------
+This script demonstrates the use of conditional statements (if, elif, else) in Python
+to make decisions based on different conditions.
+"""
 
-# Syntax:
-# if condition:
-#     code lines
+# Get user input
+name = input("Enter a name: ").strip()  # Remove any leading/trailing whitespace
 
-name = input("Enter the name: ") # Google
-
+# Simple if statement
 if name.lower() == "google":
-    print("Name is Google")
-
-if len(name) == 6: # Google => True, Tesla => False
-    print("Length of the given name is 5")
-
-# Not
-if not len(name) == 5:
-    print("Length of the given name is not 5")
+    print(f"Hello, {name}! You entered 'Google' (case-insensitive check)")
+    # Output if input is "Google" or "GOOGLE" or "google": Hello, Google! You entered 'Google' (case-insensitive check)

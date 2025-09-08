@@ -70,7 +70,25 @@
 
 ---
 
-## Module 4: Functions and Modules
+## Module 4: Control Flow
+
+1. **Conditional Statements** — [README](04_Control_Flow/README.md)
+   - `if` / `elif` / `else` — [`ifelifelse.py`](04_Control_Flow/1_Conditional_Statements/ifelifelse.py), [`ifelse.py`](04_Control_Flow/1_Conditional_Statements/ifelse.py)
+   - Nested Conditions — [`nestedconditions.py`](04_Control_Flow/1_Conditional_Statements/nestedconditions.py)
+   - Ternary Operator — [`ternaryoperation.py`](04_Control_Flow/1_Conditional_Statements/ternaryoperation.py)
+2. **Loops**
+   - `for` loops — [`forloop.py`](04_Control_Flow/2_Loops/forloop.py)
+   - `while` loops — [`whileloop.py`](04_Control_Flow/2_Loops/whileloop.py)
+   - `break` / `continue` — [`breakandcontinue.py`](04_Control_Flow/2_Loops/breakandcontinue.py)
+   - Ranges — [`ranges.py`](04_Control_Flow/2_Loops/ranges.py)
+3. **Comprehensions**
+   - List Comprehensions — [`listcomprehensions.py`](04_Control_Flow/3_Comprehensions/listcomprehensions.py)
+   - Dictionary Comprehensions — [`dictcomprehensions.py`](04_Control_Flow/3_Comprehensions/dictcomprehensions.py)
+   - Set Comprehensions — [`setcomprehensions.py`](04_Control_Flow/3_Comprehensions/setcomprehensions.py)
+
+---
+
+## Module 5: Functions and Modules
 
 - Overview — [README](04_Control_Flow/README.md)
 1. **Functions**
@@ -89,23 +107,6 @@
        - [`credit.py`](05_Functions_and_Modules/Modules_and_Packages/Custom_Modules/banking/accounts/credit.py)
        - [`debit.py`](05_Functions_and_Modules/Modules_and_Packages/Custom_Modules/banking/accounts/debit.py)
    - Test Modules — [`testmodules.py`](05_Functions_and_Modules/Modules_and_Packages/Custom_Modules/testmodules.py), [`testmodulefromlibfolder.py`](05_Functions_and_Modules/Modules_and_Packages/Custom_Modules/testmodulefromlibfolder.py)
-
----
-
-## Module 5: Control Flow
-
-1. **Conditional Statements** — [README](04_Control_Flow/README.md)
-   - `if` / `elif` / `else` — [`ifelifelse.py`](04_Control_Flow/1_Conditional_Statements/ifelifelse.py), [`ifelse.py`](04_Control_Flow/1_Conditional_Statements/ifelse.py)
-   - Nested Conditions — [`nestedconditions.py`](04_Control_Flow/1_Conditional_Statements/nestedconditions.py)
-   - Ternary Operator — [`ternaryoperation.py`](04_Control_Flow/1_Conditional_Statements/ternaryoperation.py)
-2. **Loops**
-   - `for` loops — [`forloop.py`](04_Control_Flow/2_Loops/forloop.py)
-   - `while` loops — [`whileloop.py`](04_Control_Flow/2_Loops/whileloop.py)
-   - `break` / `continue` — [`breakandcontinue.py`](04_Control_Flow/2_Loops/breakandcontinue.py)
-   - Ranges — [`ranges.py`](04_Control_Flow/2_Loops/ranges.py)
-3. **Comprehensions**
-   - List Comprehensions — [`listcomprehensions.py`](04_Control_Flow/3_Comprehensions/listcomprehensions.py)
-   - Dictionary Comprehensions — [`dictcomprehensions.py`](04_Control_Flow/3_Comprehensions/dictcomprehensions.py)
 
 ---
 

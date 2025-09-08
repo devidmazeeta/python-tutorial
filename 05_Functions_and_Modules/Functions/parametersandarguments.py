@@ -1,74 +1,134 @@
-# Method 1 => Numbers of Arguments
-def addition(num1, num2):
-    sum = num1 + num2
-    return sum
+# ===================================================
+# FUNCTION PARAMETERS AND ARGUMENTS IN PYTHON
+# ===================================================
+# Parameters are the variables listed inside the parentheses in the function definition.
+# Arguments are the values passed to the function when it is called.
 
-print("****** Numbers of Arguments ******")
-result1 = addition(10, 20)
-print(result1)
+# ===================================================
+# 1. POSITIONAL ARGUMENTS
+# ===================================================
+def add_numbers(num1, num2):
+    """
+    Adds two numbers and returns the result.
 
-# Method 2 => Keyword Arguments
-def addition(num2, num1): # Position of arguments is changed
-    sum = num1 + num2
-    return sum
+    Args:
+        num1 (int/float): First number
+        num2 (int/float): Second number
 
-print("****** Keyword Arguments ******")
-result2 = addition(num1 = 10, num2 = 20)
-print(result2)
+    Returns:
+        int/float: Sum of num1 and num2
+    """
+    return num1 + num2
 
-# Method 3 => Arbitrary Arguments (*args)
-def addition(*nums): # nums = (10, 20, 30, 40)
-    value = ""
-    for num in nums:
-        value += str(num)
-    print(value) #10203040
+print("=== Positional Arguments ===")
+result = add_numbers(10, 20)
+print(f"10 + 20 = {result}")  # Output: 10 + 20 = 30
 
-    return sum(nums) # using python built in method - sum()
+# ===================================================
+# 2. KEYWORD ARGUMENTS
+# ===================================================
+def greet_user(name, message):
+    """
+    Greets a user with a custom message.
 
-print("****** Arbitrary Arguments (*args) ******")
-result3 = addition(10, 20, 30, 40)
-print(result3)
-result4 = addition(10, 20, 30, 40, 50)
-print(result4)
-result5 = addition()
-print(result5)
+    Args:
+        name (str): Name of the user
+        message (str): Greeting message
+    """
+    print(f"{message}, {name}!")
 
-def subtract(*nums2): # nums = (10, 5)
-    value2 = nums2[1]
-    value1 = nums2[0]
-    return value1 - value2
+print("\n=== Keyword Arguments ===")
+greet_user(name="Alice", message="Hello")  # Output: Hello, Alice!
+greet_user(message="Hi there", name="Bob")  # Order doesn't matter with keyword args
 
-print(subtract(10,5))
+# ===================================================
+# 3. DEFAULT PARAMETER VALUES
+# ===================================================
+def power(base, exponent=2):
+    """
+    Returns base raised to the power of exponent.
+    If exponent is not provided, defaults to 2 (square).
+    """
+    return base ** exponent
 
-# Method 4 => Keyword Arbitrary Arguments (**kwargs)
-def laptopCount(**values):
-    # values = {
-    #     'name1': 'Dell',
-    #     'count1': 10,
-    #     'name2': 'Apple',
-    #     'count2': 20,
-    #     'name3': 'Lenovo',
-    #     'count3': 30,
-    #     'name4': 'Asus',
-    #     'count4': 5
-    # }
-    print(values)
-    print(values['name1'])
-    # print(values['name5']) # KeyError: 'name5'
-    print(values.get('name5'))
+print("\n=== Default Parameters ===")
+print(f"5 squared is {power(5)}")  # Output: 5 squared is 25
+print(f"2^4 is {power(2, 4)}")  # Output: 2^4 is 16
+print(f"3^3 is {power(base=3, exponent=3)}")  # Output: 3^3 is 27
 
-print("****** Keyword Arbitrary Arguments (**kwargs) ******")
-laptopCount(name1="Dell", count1=10,
-            name2="Apple", count2=20,
-            name3="Lenovo", count3=30,
-            name4="Asus", count4=5
+# ===================================================
+# 4. ARBITRARY ARGUMENTS (*args)
+# ===================================================
+def calculate_average(*numbers):
+    """
+    Calculates the average of any number of values.
+    *args collects all positional arguments into a tuple.
+    """
+    if not numbers:  # Check if no arguments were passed
+        return 0
+    return sum(numbers) / len(numbers)
+
+print("\n=== Arbitrary Arguments (*args) ===")
+print(f"Average of 10, 20: {calculate_average(10, 20)}")  # Output: 15.0
+print(f"Average of 1,2,3,4,5: {calculate_average(1, 2, 3, 4, 5)}")  # Output: 3.0
+print(f"Average with no arguments: {calculate_average()}")  # Output: 0
+
+# ===================================================
+# 5. KEYWORD ARBITRARY ARGUMENTS (**kwargs)
+# ===================================================
+def print_student_info(**student):
+    """
+    Prints student information.
+    **kwargs collects all keyword arguments into a dictionary.
+    """
+    print("\nStudent Information:")
+    for key, value in student.items():
+        print(f"{key.title()}: {value}")
+
+print("\n=== Keyword Arbitrary Arguments (**kwargs) ===")
+print_student_info(
+    name="Alice",
+    age=20,
+    major="Computer Science",
+    gpa=3.8
 )
 
-# Default Values
-def defaultValues(x, y="Google"):
-    print (x)
-    print (y)
+# Output:
+# Student Information:
+# Name: Alice
+# Age: 20
+# Major: Computer Science
+# Gpa: 3.8
 
-defaultValues(x = 10)
-defaultValues(x = 20, y="Tesla")
-defaultValues(20, "Tesla")
+# ===================================================
+# 6. COMBINING DIFFERENT ARGUMENT TYPES
+# ===================================================
+def create_profile(name, email, *skills, **additional_info):
+    """
+    Creates a user profile with required name/email,
+    variable skills, and additional information.
+    """
+    print(f"\nCreating profile for {name} ({email})")
+    if skills:
+        print(f"Skills: {', '.join(skills)}")
+    if additional_info:
+        print("Additional Information:")
+        for key, value in additional_info.items():
+            print(f"  {key.title()}: {value}")
+
+print("\n=== Combining Different Argument Types ===")
+create_profile(
+    "John Doe",
+    "john@example.com",
+    "Python", "JavaScript", "SQL",
+    experience="5 years",
+    location="New York",
+    status="Active"
+)
+# Output:
+# Creating profile for John Doe (john@example.com)
+# Skills: Python, JavaScript, SQL
+# Additional Information:
+#   Experience: 5 years
+#   Location: New York
+#   Status: Active
