@@ -43,11 +43,11 @@ fruits = {
     "kiwi": 25,
 }
 
-# lowStockFruits = [ fruit[0] for fruit in fruits.items() if fruit[1] < 10 ]
-# ["apple", "pineapple", "watermelon"]
+lowStockFruits1 = [ fruit[0] for fruit in fruits.items() if fruit[1] < 10 ]
+print(lowStockFruits1) # ["apple", "pineapple", "watermelon"]
 
-# lowStockFruits = [ (fruit[0], fruit[1]) for fruit in fruits.items() if fruit[1] < 10 ]
-# [("apple", 7), ("pineapple", 6), ("watermelon", 3)]
+lowStockFruits2 = [ fruit for fruit in fruits.items() if fruit[1] < 10 ]
+print(lowStockFruits2) # [("apple", 7), ("pineapple", 6), ("watermelon", 3)]
 
-lowStockFruits = [ (fruitName, stockCount) for fruitName, stockCount in fruits.items() if stockCount < 10]
-print(lowStockFruits) # [ ("apple", 7), ("pineapple", 6), ("watermelon", 3) ]
+lowStockFruits3 = [ (fruitName, stockCount) for fruitName, stockCount in fruits.items() if stockCount < 10]
+print(lowStockFruits3) # [ ("apple", 7), ("pineapple", 6), ("watermelon", 3) ]

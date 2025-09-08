@@ -16,11 +16,11 @@ fruits = {
 }
 
 orderCount = { fruitName: 10 - stockCount for fruitName, stockCount in fruits.items() if stockCount < 10 }
-print(orderCount)
+print(orderCount) # { "apple": 3, "pineapple": 4, "watermelon": 7 }
 
 # To find the occurrence of elements in a list
 # Normal Method
-values = [
+elements = [
     10,
     10,
     "abc",
@@ -34,15 +34,15 @@ values = [
 ]
 
 occurrence = {}
-for value in values:
-    if not value in occurrence.keys():
-        occurrence[value] = 1
+for element in elements:
+    if not element in occurrence.keys():
+        occurrence[element] = 1
     else:
-        occurrence[value] += 1
+        occurrence[element] += 1 # occurrence[value] = occurrence[value] + 1
 print("******* Normal Method *********")
-print(occurrence)
+print(occurrence) # { 10: 2, "abc": 1, "def": 2, "100": 1, 30: 1, "GHI": 1, "Xyz": 1 }
 
 # Comprehension Method
-occurrence = { value: values.count(value) for value in values }
+occurrence = { element: elements.count(element) for element in elements }
 print("******* Dict Comprehension *********")
-print(occurrence)
+print(occurrence) # { 10: 2, "abc": 1, "def": 2, "100": 1, 30: 1, "GHI": 1, "Xyz": 1 }
