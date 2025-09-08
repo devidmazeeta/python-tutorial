@@ -67,6 +67,7 @@ By the end of this course, learners will be able to:
   - [3_Comprehensions](04_Control_Flow/3_Comprehensions/)
     - [dictcomprehensions.py](04_Control_Flow/3_Comprehensions/dictcomprehensions.py)
     - [listcomprehensions.py](04_Control_Flow/3_Comprehensions/listcomprehensions.py)
+    - [setcomprehensions.py](04_Control_Flow/3_Comprehensions/setcomprehensions.py)
 - [05_Functions_and_Modules](05_Functions_and_Modules/)
   - [Functions](05_Functions_and_Modules/Functions/)
     - [definingandcalling.py](05_Functions_and_Modules/Functions/definingandcalling.py)
