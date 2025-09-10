@@ -4,14 +4,15 @@
 - [Module 1: Introduction to Python](#module-1-introduction-to-python)
 - [Module 2: Basic Python Syntax](#module-2-basic-python-syntax)
 - [Module 3: Data Structures](#module-3-data-structures)
-- [Module 4: Functions and Modules](#module-4-functions-and-modules)
-- [Module 5: Control Flow](#module-5-control-flow)
+- [Module 4: Control Flow](#module-5-control-flow)
+- [Module 5: Functions and Modules](#module-4-functions-and-modules)
 - [Module 6: File Handling](#module-6-file-handling)
 - [Module 7: Error Handling and Exceptions](#module-7-error-handling-and-exceptions)
 - [Module 8: Object-Oriented Programming (OOP)](#module-8-object-oriented-programming-oop)
 - [Module 9: Advanced Topics](#module-9-advanced-topics)
 - [Module 10: Final Project & Review](#module-10-final-project--review)
 - [Assessments](#assessments)
+- [AI Prompts](#ai-prompts)
 - [References](#references)
 
 ---
@@ -72,7 +73,8 @@
 
 ## Module 4: Control Flow
 
-1. **Conditional Statements** — [README](04_Control_Flow/README.md)
+- Overview — [README](04_Control_Flow/README.md)
+1. **Conditional Statements**
    - `if` / `elif` / `else` — [`ifelifelse.py`](04_Control_Flow/1_Conditional_Statements/ifelifelse.py), [`ifelse.py`](04_Control_Flow/1_Conditional_Statements/ifelse.py)
    - Nested Conditions — [`nestedconditions.py`](04_Control_Flow/1_Conditional_Statements/nestedconditions.py)
    - Ternary Operator — [`ternaryoperation.py`](04_Control_Flow/1_Conditional_Statements/ternaryoperation.py)
@@ -90,7 +92,7 @@
 
 ## Module 5: Functions and Modules
 
-- Overview — [README](04_Control_Flow/README.md)
+- Overview — [README](05_Functions_and_Modules/README.md)
 1. **Functions**
    - Defining & Calling — [`definingandcalling.py`](05_Functions_and_Modules/Functions/definingandcalling.py)
    - Parameters & Arguments — [`parametersandarguments.py`](05_Functions_and_Modules/Functions/parametersandarguments.py)
@@ -185,6 +187,15 @@
 
 - Basics Assessment — [`Assessments/Basic_Assessments/`](Assessments/Basic_Assessments/)
 - Coding Exercises — [`Assessment_1.docx`](Assessments/Coding_Exercises/Assessment_1.docx), [`Assessment_2.docx`](Assessments/Coding_Exercises/Assessment_2.docx), [`Assessment_3.docx`](Assessments/Coding_Exercises/Assessment_3.docx)
+
+---
+
+## AI Prompts
+
+## AI Prompts
+
+- **Code Refactoring Guidelines** ([code_refactor.poml](AI_Prompts/code_refactor.poml)) - Guidelines for refactoring and enhancing code with better readability, efficiency, and style.
+- **README Creation Rules** ([readme_file_creation_rules.txt](AI_Prompts/readme_file_creation_rules.txt)) - Comprehensive rules for creating consistent and informative README files throughout the tutorial repository.
 
 ---
 

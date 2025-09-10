@@ -76,6 +76,9 @@ def calculate_area(length, width):
     """
     return length * width
 
+# Accessing the calculate_area function
+print(calculate_area(10.1,20))
+
 # Accessing the docstring
 print(calculate_area.__doc__)  # Output: The docstring will be printed
 
