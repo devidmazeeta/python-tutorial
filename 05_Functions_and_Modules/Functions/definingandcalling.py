@@ -12,7 +12,7 @@ def greet():
     print("Welcome to the greet function!")  # This will print when the function is called
 
 # Function call - executes the code inside the function
-greet()  # Output: Welcome to the greet function!
+greet()  # Welcome to the greet function!
 
 # ===================================================
 # 2. FUNCTIONS WITH RETURN STATEMENT
@@ -27,15 +27,15 @@ def get_greeting():
 
 # Calling and storing the returned value
 message = get_greeting()
-print(message)  # Output: Hello from get_greeting function!
+print(message)  # Hello from get_greeting function!
 
 # Directly using the returned value
-print(get_greeting())  # Output: Hello from get_greeting function!
+print(get_greeting())  # Hello from get_greeting function!
 
 # ===================================================
 # 3. FUNCTION WITH MULTIPLE RETURN STATEMENTS
 # ===================================================
-def check_number(num):
+def check_number(num): # num = 0
     """Returns a message based on the number's value."""
     if num > 0:
         return "Positive number"  # First return statement
@@ -45,9 +45,9 @@ def check_number(num):
         return "Zero"  # Third return statement
 
 # Testing the function with different inputs
-print(check_number(5))  # Output: Positive number
-print(check_number(-3))  # Output: Negative number
-print(check_number(0))  # Output: Zero
+print(check_number(5))  # Positive number
+print(check_number(-3))  # Negative number
+print(check_number(0))  # Zero
 
 # ===================================================
 # 4. FUNCTION WITHOUT RETURN STATEMENT
@@ -57,8 +57,8 @@ def print_message():
     print("This function performs an action but returns None")
 
 # The function returns None by default
-result = print_message()  # Output: This function performs an action but returns None
-print("Return value:", result)  # Output: Return value: None
+result = print_message()  # This function performs an action but returns None
+print("Return value:", result)  # Return value: None
 
 # ===================================================
 # 5. FUNCTION DOCSTRINGS
@@ -80,7 +80,7 @@ def calculate_area(length, width):
 print(calculate_area(10.1,20))
 
 # Accessing the docstring
-print(calculate_area.__doc__)  # Output: The docstring will be printed
+print(calculate_area.__doc__)  # The docstring will be printed
 
 # ===================================================
 # 6. FUNCTION CALLING OTHER FUNCTIONS
@@ -93,4 +93,4 @@ def greet_morning():
     """Calls greet_user with a default name."""
     return greet_user("Morning User")
 
-print(greet_morning())  # Output: Hello, Morning User! Welcome!
+print(greet_morning())  # Hello, Morning User! Welcome!
